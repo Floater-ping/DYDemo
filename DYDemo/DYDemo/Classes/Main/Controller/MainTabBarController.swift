@@ -26,6 +26,5 @@ class MainTabBarController: UITabBarController {
         addChildViewController(homeVC)
     }
 
-  
 
 }
