@@ -19,6 +19,7 @@
 		4D7181BE1F2F1573007CF38A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7181BD1F2F1573007CF38A /* HomeViewController.swift */; };
 		4D7181C11F2F2021007CF38A /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7181C01F2F2021007CF38A /* UIBarButtonItem-Extension.swift */; };
 		4D7181C31F2F32E3007CF38A /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7181C21F2F32E3007CF38A /* PageTitleView.swift */; };
+		4D8F8E561F31836500F1C630 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F8E551F31836500F1C630 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4D7181BD1F2F1573007CF38A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4D7181C01F2F2021007CF38A /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		4D7181C21F2F32E3007CF38A /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		4D8F8E551F31836500F1C630 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				4D7181BF1F2F1FF2007CF38A /* Extension */,
+				4D8F8E551F31836500F1C630 /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				4D7181841F2EDA11007CF38A /* AppDelegate.swift in Sources */,
 				4D7181C31F2F32E3007CF38A /* PageTitleView.swift in Sources */,
 				4D7181C11F2F2021007CF38A /* UIBarButtonItem-Extension.swift in Sources */,
+				4D8F8E561F31836500F1C630 /* Common.swift in Sources */,
 				4D7181BE1F2F1573007CF38A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
