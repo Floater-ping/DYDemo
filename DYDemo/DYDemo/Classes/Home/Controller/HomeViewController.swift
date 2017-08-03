@@ -26,6 +26,10 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         /// 设置ui界面
         setupUI()
+        
+        /// 设置titleview
+        view.addSubview(pageTitleView)
+        
     }
     
 }
@@ -35,6 +39,9 @@ class HomeViewController: UIViewController {
 private extension HomeViewController {
     
     func setupUI() {
+        /// 不需要调整scrollview的内边距
+        automaticallyAdjustsScrollViewInsets = false
+        
         /// 设置导航栏
         setupNavigationBar()
         
