@@ -24,7 +24,7 @@ class PageTitleView: UIView {
     }()
     
     fileprivate lazy var scrollLine : UIView = {
-    
+        
         let scrollLine = UIView()
         scrollLine.backgroundColor = UIColor.orange
         return scrollLine
@@ -43,8 +43,6 @@ class PageTitleView: UIView {
         // 设置ui界面
         setupUI()
     }
-    
-    
     
     
     /// 自定义或者重写构造函数必须重写该方法
@@ -86,8 +84,6 @@ extension PageTitleView {
             label.frame = CGRect(x: labelX, y: labelY, width: labelW, height: labelH)
             scrollView .addSubview(label)
             titleLabels.append(label)
-            
-            
         }
     }
     

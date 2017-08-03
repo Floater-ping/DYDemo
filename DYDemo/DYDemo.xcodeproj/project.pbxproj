@@ -20,6 +20,7 @@
 		4D7181C11F2F2021007CF38A /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7181C01F2F2021007CF38A /* UIBarButtonItem-Extension.swift */; };
 		4D7181C31F2F32E3007CF38A /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7181C21F2F32E3007CF38A /* PageTitleView.swift */; };
 		4D8F8E561F31836500F1C630 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F8E551F31836500F1C630 /* Common.swift */; };
+		4D9F731B1F32F7660025E56B /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9F731A1F32F7660025E56B /* PageContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		4D7181C01F2F2021007CF38A /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		4D7181C21F2F32E3007CF38A /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		4D8F8E551F31836500F1C630 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		4D9F731A1F32F7660025E56B /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				4D7181C21F2F32E3007CF38A /* PageTitleView.swift */,
+				4D9F731A1F32F7660025E56B /* PageContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				4D7181B91F2F149C007CF38A /* MainTabBarController.swift in Sources */,
 				4D7181841F2EDA11007CF38A /* AppDelegate.swift in Sources */,
 				4D7181C31F2F32E3007CF38A /* PageTitleView.swift in Sources */,
+				4D9F731B1F32F7660025E56B /* PageContentView.swift in Sources */,
 				4D7181C11F2F2021007CF38A /* UIBarButtonItem-Extension.swift in Sources */,
 				4D8F8E561F31836500F1C630 /* Common.swift in Sources */,
 				4D7181BE1F2F1573007CF38A /* HomeViewController.swift in Sources */,
