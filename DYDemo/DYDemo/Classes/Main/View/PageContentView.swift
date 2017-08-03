@@ -53,7 +53,6 @@ class PageContentView: UIView {
 
 //MARK:- 设置ui界面
 extension PageContentView {
-
     fileprivate func setUpUI(){
     // 1.将所有的自控制器添加到父控制器中
         for childvc in childVCs {
@@ -109,4 +108,12 @@ extension PageContentView : UICollectionViewDelegate {
     
 
     
+}
+
+
+//MARK:- 对外暴露的方法
+extension PageContentView {
+    func setCurrentIndex(currentIndex : Int) {
+        
+    }
 }
