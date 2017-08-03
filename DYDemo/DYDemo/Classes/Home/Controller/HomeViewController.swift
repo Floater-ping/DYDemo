@@ -8,11 +8,11 @@
 
 import UIKit
 
-private let pTitleViewH : CGFloat = 40
+fileprivate let pTitleViewH : CGFloat = 40
 
 class HomeViewController: UIViewController {
     //MARK:- 懒加载
-    private lazy var pageTitleView:PageTitleView = {
+    fileprivate lazy var pageTitleView:PageTitleView = {
         let titleFrame = CGRect(x: 0, y: pStatusBarH+pNavigationBarH, width: pScreenWidth, height: pTitleViewH)
         let titles = ["推荐","游戏","娱乐","趣玩"]
         let titleView = PageTitleView(frame: titleFrame, titles: titles)
@@ -20,15 +20,36 @@ class HomeViewController: UIViewController {
     }()
     
     
+    fileprivate lazy var pageContentView : PageContentView = {[weak self] in
+        let contentY = pStatusBarH + pNavigationBarH + pTitleViewH
+        let contentH = pScreenHeight - contentY
+        let contentFrame = CGRect(x: 0, y: contentY, width: pScreenWidth, height: contentH)
+        
+        var childVCArr = [UIViewController]()
+        for _ in 0..<4 {
+            let vc = UIViewController()
+            vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
+            childVCArr.append(vc)
+        }
+        
+        let pageContentView = PageContentView(frame: contentFrame, childVCs: childVCArr, parentViewController: self)
+        return pageContentView
+    }()
+    
+    
     
     //MARK:- 系统回调函数
     override func viewDidLoad() {
         super.viewDidLoad()
-        /// 设置ui界面
+        /// 1.设置ui界面
         setupUI()
         
-        /// 设置titleview
+        /// 2.设置titleview
         view.addSubview(pageTitleView)
+        
+        /// 3.添加pageContentView
+        view.addSubview(pageContentView)
+        pageContentView.backgroundColor = UIColor.orange
         
     }
     
@@ -36,9 +57,9 @@ class HomeViewController: UIViewController {
 
 
 //MARK:- 设置ui界面
-private extension HomeViewController {
+extension HomeViewController {
     
-    func setupUI() {
+    fileprivate func setupUI() {
         /// 不需要调整scrollview的内边距
         automaticallyAdjustsScrollViewInsets = false
         
@@ -48,7 +69,7 @@ private extension HomeViewController {
     }
     
     
-    private func setupNavigationBar() {
+    fileprivate func setupNavigationBar() {
         /// 1.设置左侧的item
         navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "logo")
         
