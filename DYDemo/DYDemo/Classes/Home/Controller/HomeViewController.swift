@@ -12,10 +12,11 @@ fileprivate let pTitleViewH : CGFloat = 40
 
 class HomeViewController: UIViewController {
     //MARK:- 懒加载
-    fileprivate lazy var pageTitleView:PageTitleView = {
+    fileprivate lazy var pageTitleView:PageTitleView = {[weak self] in
         let titleFrame = CGRect(x: 0, y: pStatusBarH+pNavigationBarH, width: pScreenWidth, height: pTitleViewH)
         let titles = ["推荐","游戏","娱乐","趣玩"]
         let titleView = PageTitleView(frame: titleFrame, titles: titles)
+        titleView.delegate = self
         return titleView
     }()
     
@@ -81,6 +82,14 @@ extension HomeViewController {
         let searchItem = UIBarButtonItem(imageName: "btn_search", highImageName: "btn_search_clicked", size: size)
         let qrcodeItem = UIBarButtonItem(imageName: "Image_scan", highImageName: "Image_scan_click", size: size)
         navigationItem.rightBarButtonItems = [historyItem,searchItem,qrcodeItem]
+        
+    }
+    
+}
+
+//MARK:- PageTitleViewDelegate
+extension HomeViewController : PageTitleViewDelegate {
+    func pageTitleView(titleView: PageTitleView, selectedIndex index: Int) {
         
     }
     
