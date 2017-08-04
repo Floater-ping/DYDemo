@@ -22,7 +22,7 @@ fileprivate let pHeaderViewID = "pHeaderViewID"
 class RecommendController: UIViewController {
     //MARK:- 懒加载属性
     fileprivate lazy var collectionView : UICollectionView = {[unowned self] in
-      
+        
         // 1.创建layout
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: pItemW, height: pItemH)
@@ -33,23 +33,28 @@ class RecommendController: UIViewController {
         layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         
         let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
+        collectionView.backgroundColor = UIColor.white
         collectionView.dataSource = self
         // 注册头部
-         collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: pHeaderViewID)
+        collectionView.register(UINib(nibName: "HomeCollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: pHeaderViewID)
         /// 注册cell
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: pNormalCellID)
+        //        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: pNormalCellID)
+        collectionView.register(UINib(nibName: "CollectionNormalCell", bundle: nil), forCellWithReuseIdentifier: pNormalCellID)
         // 设置大小随父控件拉伸
-         collectionView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
+        collectionView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
         return collectionView;
         
-    }()
+        }()
     
     //MARK:- 系统回调函数
     override func viewDidLoad() {
         super.viewDidLoad()
         // 设置UI页面
         setUpUI()
-   
+        //        CollectionNormalCell
+        
+        
+        
     }
     
 }
@@ -81,16 +86,15 @@ extension RecommendController : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: pNormalCellID, for: indexPath)
-        cell.backgroundColor = UIColor.lightGray
+       
         return cell
     }
     
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let headerV = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: pHeaderViewID, for: indexPath)
-        headerV.backgroundColor = UIColor.darkGray
         return headerV
     }
     
-  
+    
 }
