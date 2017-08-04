@@ -18,19 +18,19 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="IY5-6Q-hIw">
-                        <rect key="frame" x="10" y="131" width="14" height="14"/>
+                        <rect key="frame" x="0.0" y="131" width="14" height="14"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="14" id="GQX-gb-sdb"/>
                             <constraint firstAttribute="height" constant="14" id="ywj-CK-5Xi"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="柯宝日常训练" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTZ-mA-u8w">
-                        <rect key="frame" x="29" y="131.5" width="157" height="13.5"/>
+                        <rect key="frame" x="19" y="131.5" width="172" height="13.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="ee9-ee-2mb">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="ee9-ee-2mb">
                         <rect key="frame" x="0.0" y="0.0" width="196" height="126"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -58,22 +58,22 @@
                 <constraint firstItem="IEQ-OS-gw3" firstAttribute="trailing" secondItem="ee9-ee-2mb" secondAttribute="trailing" constant="-5" id="HzX-CE-kNa"/>
                 <constraint firstItem="FTZ-mA-u8w" firstAttribute="leading" secondItem="IY5-6Q-hIw" secondAttribute="trailing" constant="5" id="QxP-V9-0ch"/>
                 <constraint firstItem="ee9-ee-2mb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="T5c-0J-LcJ"/>
-                <constraint firstItem="IY5-6Q-hIw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="YtL-VV-Hos"/>
+                <constraint firstItem="IY5-6Q-hIw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YtL-VV-Hos"/>
                 <constraint firstItem="IY5-6Q-hIw" firstAttribute="top" secondItem="ee9-ee-2mb" secondAttribute="bottom" constant="5" id="a3t-oD-C8H"/>
                 <constraint firstItem="IEQ-OS-gw3" firstAttribute="bottom" secondItem="ee9-ee-2mb" secondAttribute="bottom" constant="-5" id="atc-r0-Lgh"/>
                 <constraint firstItem="pEY-i6-CST" firstAttribute="leading" secondItem="ee9-ee-2mb" secondAttribute="leading" constant="5" id="ckc-ql-xn5"/>
                 <constraint firstItem="ee9-ee-2mb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="f2h-2c-5p0"/>
                 <constraint firstItem="IY5-6Q-hIw" firstAttribute="centerY" secondItem="FTZ-mA-u8w" secondAttribute="centerY" id="nQk-yQ-sOD"/>
                 <constraint firstAttribute="trailing" secondItem="ee9-ee-2mb" secondAttribute="trailing" id="vtu-Sr-M0i"/>
-                <constraint firstAttribute="trailing" secondItem="FTZ-mA-u8w" secondAttribute="trailing" constant="10" id="wNS-eX-Eul"/>
+                <constraint firstAttribute="trailing" secondItem="FTZ-mA-u8w" secondAttribute="trailing" constant="5" id="wNS-eX-Eul"/>
             </constraints>
             <size key="customSize" width="196" height="155"/>
-            <point key="canvasLocation" x="-220" y="-160"/>
+            <point key="canvasLocation" x="-357" y="-527"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="Image_online_gray" width="13" height="13"/>
+        <image name="Img_default" width="172" height="103"/>
         <image name="home_live_cate_normal" width="14" height="14"/>
-        <image name="live_cell_default_phone" width="103" height="103"/>
     </resources>
 </document>

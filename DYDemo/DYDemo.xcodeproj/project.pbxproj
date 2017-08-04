@@ -12,6 +12,8 @@
 		4D3DBA061F3456070012D9BF /* HomeCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3DBA041F3456070012D9BF /* HomeCollectionHeaderView.xib */; };
 		4D3DBA091F3460440012D9BF /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBA071F3460440012D9BF /* CollectionNormalCell.swift */; };
 		4D3DBA0A1F3460440012D9BF /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3DBA081F3460440012D9BF /* CollectionNormalCell.xib */; };
+		4D3DBA0D1F3464BA0012D9BF /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBA0B1F3464BA0012D9BF /* CollectionPrettyCell.swift */; };
+		4D3DBA0E1F3464BA0012D9BF /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3DBA0C1F3464BA0012D9BF /* CollectionPrettyCell.xib */; };
 		4D7181841F2EDA11007CF38A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7181831F2EDA11007CF38A /* AppDelegate.swift */; };
 		4D7181891F2EDA11007CF38A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7181871F2EDA11007CF38A /* Main.storyboard */; };
 		4D71818B1F2EDA11007CF38A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D71818A1F2EDA11007CF38A /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		4D3DBA041F3456070012D9BF /* HomeCollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionHeaderView.xib; sourceTree = "<group>"; };
 		4D3DBA071F3460440012D9BF /* CollectionNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
 		4D3DBA081F3460440012D9BF /* CollectionNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
+		4D3DBA0B1F3464BA0012D9BF /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
+		4D3DBA0C1F3464BA0012D9BF /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		4D7181801F2EDA11007CF38A /* DYDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7181831F2EDA11007CF38A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D7181881F2EDA11007CF38A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -214,6 +218,8 @@
 				4D9F731A1F32F7660025E56B /* PageContentView.swift */,
 				4D3DBA071F3460440012D9BF /* CollectionNormalCell.swift */,
 				4D3DBA081F3460440012D9BF /* CollectionNormalCell.xib */,
+				4D3DBA0B1F3464BA0012D9BF /* CollectionPrettyCell.swift */,
+				4D3DBA0C1F3464BA0012D9BF /* CollectionPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -360,6 +366,7 @@
 				4D7181A31F2F0D89007CF38A /* Live.storyboard in Resources */,
 				4D7181A01F2F0D59007CF38A /* Home.storyboard in Resources */,
 				4D7181A91F2F0DC5007CF38A /* Profile.storyboard in Resources */,
+				4D3DBA0E1F3464BA0012D9BF /* CollectionPrettyCell.xib in Resources */,
 				4D3DBA061F3456070012D9BF /* HomeCollectionHeaderView.xib in Resources */,
 				4D7181A61F2F0DA8007CF38A /* Follow.storyboard in Resources */,
 			);
@@ -381,6 +388,7 @@
 				4D3DBA051F3456070012D9BF /* HomeCollectionHeaderView.swift in Sources */,
 				4D7181C11F2F2021007CF38A /* UIBarButtonItem-Extension.swift in Sources */,
 				4D8F8E561F31836500F1C630 /* Common.swift in Sources */,
+				4D3DBA0D1F3464BA0012D9BF /* CollectionPrettyCell.swift in Sources */,
 				4D3DBA091F3460440012D9BF /* CollectionNormalCell.swift in Sources */,
 				4D7181BE1F2F1573007CF38A /* HomeViewController.swift in Sources */,
 			);

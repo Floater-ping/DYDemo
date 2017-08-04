@@ -15,6 +15,7 @@ fileprivate let pItemH : CGFloat = pItemW * 3 / 4
 fileprivate let pHeaderViewH : CGFloat = 50
 
 fileprivate let pNormalCellID = "pNormalCellID"
+fileprivate let pPrettyCellID = "pPrettyCellID"
 fileprivate let pHeaderViewID = "pHeaderViewID"
 
 
@@ -40,6 +41,9 @@ class RecommendController: UIViewController {
         /// 注册cell
         //        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: pNormalCellID)
         collectionView.register(UINib(nibName: "CollectionNormalCell", bundle: nil), forCellWithReuseIdentifier: pNormalCellID)
+        // 颜值cell
+        collectionView.register(UINib(nibName: "CollectionPrettyCell", bundle: nil), forCellWithReuseIdentifier: pPrettyCellID)
+        
         // 设置大小随父控件拉伸
         collectionView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
         return collectionView;
@@ -85,8 +89,13 @@ extension RecommendController : UICollectionViewDataSource {
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: pNormalCellID, for: indexPath)
-       
+        var cell : UICollectionViewCell
+        
+        if indexPath.section == 1 {
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: pPrettyCellID, for: indexPath)
+        }else {
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: pNormalCellID, for: indexPath)
+        }
         return cell
     }
     
