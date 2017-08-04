@@ -11,6 +11,8 @@ import UIKit
 let pStatusBarH : CGFloat = 20
 /// 导航条高度
 let pNavigationBarH : CGFloat = 44
+/// tabBar高度
+let pTabBarH : CGFloat = 44
 /// 屏幕宽度
 let pScreenWidth : CGFloat = UIScreen.main.bounds.width
 /// 屏幕高度

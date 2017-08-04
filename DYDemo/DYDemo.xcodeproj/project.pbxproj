@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D3DBA021F3442220012D9BF /* RecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBA011F3442220012D9BF /* RecommendController.swift */; };
 		4D7181841F2EDA11007CF38A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7181831F2EDA11007CF38A /* AppDelegate.swift */; };
 		4D7181891F2EDA11007CF38A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7181871F2EDA11007CF38A /* Main.storyboard */; };
 		4D71818B1F2EDA11007CF38A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D71818A1F2EDA11007CF38A /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D3DBA011F3442220012D9BF /* RecommendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendController.swift; sourceTree = "<group>"; };
 		4D7181801F2EDA11007CF38A /* DYDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7181831F2EDA11007CF38A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D7181881F2EDA11007CF38A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			children = (
 				4D71819E1F2F0D59007CF38A /* Home.storyboard */,
 				4D7181BD1F2F1573007CF38A /* HomeViewController.swift */,
+				4D3DBA011F3442220012D9BF /* RecommendController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				4D7181B91F2F149C007CF38A /* MainTabBarController.swift in Sources */,
 				4D9F731F1F3312DA0025E56B /* UIColor-Extension.swift in Sources */,
 				4D7181841F2EDA11007CF38A /* AppDelegate.swift in Sources */,
+				4D3DBA021F3442220012D9BF /* RecommendController.swift in Sources */,
 				4D7181C31F2F32E3007CF38A /* PageTitleView.swift in Sources */,
 				4D9F731B1F32F7660025E56B /* PageContentView.swift in Sources */,
 				4D7181C11F2F2021007CF38A /* UIBarButtonItem-Extension.swift in Sources */,
