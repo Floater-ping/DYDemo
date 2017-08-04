@@ -17,7 +17,7 @@ class PageContentView: UIView {
     
     
     //MARK:- 懒加载属性
-     fileprivate lazy var collectionView:UICollectionView = {[weak self] in
+    fileprivate lazy var collectionView:UICollectionView = {[weak self] in
         // 1.创建layout
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = (self?.bounds.size)!
@@ -33,7 +33,7 @@ class PageContentView: UIView {
         /// 注册cell
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: ContentCellID)
         return collectionView;
-    }()
+        }()
     
     
     
@@ -54,9 +54,9 @@ class PageContentView: UIView {
 //MARK:- 设置ui界面
 extension PageContentView {
     fileprivate func setUpUI(){
-    // 1.将所有的自控制器添加到父控制器中
+        // 1.将所有的自控制器添加到父控制器中
         for childvc in childVCs {
-        
+            
             parentViewController?.addChildViewController(childvc)
         }
         
@@ -97,16 +97,16 @@ extension PageContentView : UICollectionViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         // 滚动处理
-//        let currentOffsetX = scrollView.contentOffset.x
-//        let scrollViewW = scrollView.bounds.width
-//        if currentOffsetX >  {
-//            <#code#>
-//        }
+        //        let currentOffsetX = scrollView.contentOffset.x
+        //        let scrollViewW = scrollView.bounds.width
+        //        if currentOffsetX >  {
+        //            <#code#>
+        //        }
         
         
     }
     
-
+    
     
 }
 
@@ -114,6 +114,16 @@ extension PageContentView : UICollectionViewDelegate {
 //MARK:- 对外暴露的方法
 extension PageContentView {
     func setCurrentIndex(currentIndex : Int) {
+        
+        // 方法一
+        let offsetX = CGFloat(currentIndex) * collectionView.frame.width
+        collectionView.setContentOffset(CGPoint(x:offsetX,y:0), animated: false)
+        /*
+         // 方法二
+         let indexPath : IndexPath = IndexPath(item: currentIndex, section: 0)
+         collectionView.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition(), animated: false)
+         */
+        
         
     }
 }
