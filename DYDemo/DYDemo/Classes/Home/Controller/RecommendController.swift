@@ -11,7 +11,8 @@ import UIKit
 //MARK:- 定义常量
 fileprivate let pItemMargin : CGFloat = 10
 fileprivate let pItemW : CGFloat = (pScreenWidth - pItemMargin * 3) / 2
-fileprivate let pItemH : CGFloat = pItemW * 3 / 4
+fileprivate let pNormalItemH : CGFloat = pItemW * 3 / 4
+fileprivate let pPrettyItemH : CGFloat = pItemW * 4 / 3
 fileprivate let pHeaderViewH : CGFloat = 50
 
 fileprivate let pNormalCellID = "pNormalCellID"
@@ -26,7 +27,7 @@ class RecommendController: UIViewController {
         
         // 1.创建layout
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: pItemW, height: pItemH)
+//        layout.itemSize = CGSize(width: pItemW, height: pNormalItemH)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = pItemMargin
         layout.scrollDirection = .vertical
@@ -36,6 +37,7 @@ class RecommendController: UIViewController {
         let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
         collectionView.backgroundColor = UIColor.white
         collectionView.dataSource = self
+        collectionView.delegate = self
         // 注册头部
         collectionView.register(UINib(nibName: "HomeCollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: pHeaderViewID)
         /// 注册cell
@@ -55,9 +57,6 @@ class RecommendController: UIViewController {
         super.viewDidLoad()
         // 设置UI页面
         setUpUI()
-        //        CollectionNormalCell
-        
-        
         
     }
     
@@ -105,5 +104,18 @@ extension RecommendController : UICollectionViewDataSource {
         return headerV
     }
     
-    
+}
+
+//MARK:- UICollectionViewDelegate
+extension RecommendController : UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if indexPath.section == 1 {
+            return CGSize(width: pItemW, height: pPrettyItemH)
+        }else {
+        
+            return CGSize(width: pItemW, height: pNormalItemH)
+        }
+        
+    }
+
 }

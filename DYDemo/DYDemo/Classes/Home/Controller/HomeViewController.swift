@@ -7,6 +7,12 @@
 //
 
 import UIKit
+import Alamofire
+
+enum MethodType {
+    case get
+    case post
+}
 
 fileprivate let pTitleViewH : CGFloat = 40
 
@@ -52,9 +58,14 @@ class HomeViewController: UIViewController {
         
         /// 3.添加pageContentView
         view.addSubview(pageContentView)
-        pageContentView.backgroundColor = UIColor.orange
         
+    
     }
+ 
+  
+
+    
+  
     
 }
 
