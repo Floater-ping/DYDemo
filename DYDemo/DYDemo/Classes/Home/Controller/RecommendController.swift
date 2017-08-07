@@ -52,11 +52,16 @@ class RecommendController: UIViewController {
         
         }()
     
+    
+    fileprivate lazy var recomendVM : RecommendViewModel = RecommendViewModel()
+    
+    
     //MARK:- 系统回调函数
     override func viewDidLoad() {
         super.viewDidLoad()
         // 设置UI页面
         setUpUI()
+        loadData()
         
     }
     
@@ -70,6 +75,15 @@ extension RecommendController {
         view.addSubview(collectionView)
         
     }
+}
+
+//MARK:- 网络请求-加载数据
+extension RecommendController {
+    func loadData() {
+    
+        recomendVM.requestData()
+    }
+  
 }
 
 //MARK:- UICollectionViewDataSource

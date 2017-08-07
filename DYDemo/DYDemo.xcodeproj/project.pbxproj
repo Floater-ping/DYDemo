@@ -10,6 +10,7 @@
 		4D3B9FB41F38189200EC4B3D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3B9FA71F38185300EC4B3D /* Alamofire.framework */; };
 		4D3B9FB51F38189200EC4B3D /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3B9FA71F38185300EC4B3D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4D3B9FBB1F38374F00EC4B3D /* HttpTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B9FBA1F38374F00EC4B3D /* HttpTools.swift */; };
+		4D3B9FBE1F3848AF00EC4B3D /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B9FBD1F3848AF00EC4B3D /* RecommendViewModel.swift */; };
 		4D3DBA021F3442220012D9BF /* RecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBA011F3442220012D9BF /* RecommendController.swift */; };
 		4D3DBA051F3456070012D9BF /* HomeCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBA031F3456070012D9BF /* HomeCollectionHeaderView.swift */; };
 		4D3DBA061F3456070012D9BF /* HomeCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3DBA041F3456070012D9BF /* HomeCollectionHeaderView.xib */; };
@@ -110,6 +111,7 @@
 /* Begin PBXFileReference section */
 		4D3B9F9B1F38185200EC4B3D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../../../Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		4D3B9FBA1F38374F00EC4B3D /* HttpTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTools.swift; sourceTree = "<group>"; };
+		4D3B9FBD1F3848AF00EC4B3D /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
 		4D3DBA011F3442220012D9BF /* RecommendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendController.swift; sourceTree = "<group>"; };
 		4D3DBA031F3456070012D9BF /* HomeCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionHeaderView.swift; sourceTree = "<group>"; };
 		4D3DBA041F3456070012D9BF /* HomeCollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionHeaderView.xib; sourceTree = "<group>"; };
@@ -160,6 +162,14 @@
 				4D3B9FB31F38185300EC4B3D /* Alamofire.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4D3B9FBC1F38487500EC4B3D /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4D3B9FBD1F3848AF00EC4B3D /* RecommendViewModel.swift */,
+			);
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 		4D7181771F2EDA11007CF38A = {
@@ -219,6 +229,7 @@
 				4D7181AC1F2F13CE007CF38A /* Controller */,
 				4D7181AE1F2F13CE007CF38A /* View */,
 				4D7181AD1F2F13CE007CF38A /* Model */,
+				4D3B9FBC1F38487500EC4B3D /* viewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -547,6 +558,7 @@
 				4D3DBA0D1F3464BA0012D9BF /* CollectionPrettyCell.swift in Sources */,
 				4D3DBA091F3460440012D9BF /* CollectionNormalCell.swift in Sources */,
 				4D7181BE1F2F1573007CF38A /* HomeViewController.swift in Sources */,
+				4D3B9FBE1F3848AF00EC4B3D /* RecommendViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
