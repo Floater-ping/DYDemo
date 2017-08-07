@@ -81,7 +81,9 @@ extension RecommendController {
 extension RecommendController {
     func loadData() {
     
-        recomendVM.requestData()
+        recomendVM.requestData {
+            self.collectionView.reloadData()
+        }
     }
   
 }
@@ -89,15 +91,13 @@ extension RecommendController {
 //MARK:- UICollectionViewDataSource
 extension RecommendController : UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 12
+        return recomendVM.anchorGroupArr.count
     }
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {
-            return 8
-        }
-        return 4
+       let group = recomendVM.anchorGroupArr[section]
+        return group.anchorArr.count
     }
     
     
@@ -114,7 +114,10 @@ extension RecommendController : UICollectionViewDataSource {
     
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerV = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: pHeaderViewID, for: indexPath)
+        let headerV = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: pHeaderViewID, for: indexPath) as! HomeCollectionHeaderView
+        let group = recomendVM.anchorGroupArr[indexPath.section]
+        headerV.groupModel = group
+        
         return headerV
     }
     
