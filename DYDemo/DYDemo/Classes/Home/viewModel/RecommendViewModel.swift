@@ -27,21 +27,13 @@ extension RecommendViewModel {
         
         /// 1.请求第一部分推荐数据
         HttpTools.requestData(.GET, URLString: "http://capi.douyucdn.cn/api/v1/getbigDataRoom", parameters: ["time" : NSDate.getCurrentTime()]) { (result) in
-            guard let resultDict = result as? [String : NSObject] else {
-                return
-            }
+            guard let resultDict = result as? [String : Any] else { return }
             
-            guard let dataArr = resultDict["data"] as? [[String : NSObject]] else {
-                return
-            }
-            
+            guard let dataArr = resultDict["data"] as? [[String : Any]] else { return }
             
             self.bigDataGroup.tag_name = "热门"
             self.bigDataGroup.icon_url = "home_header_hot"
-            
-            
             for dict in dataArr {
-                
                 let anchor = AnchorModel(dict: dict)
                 self.bigDataGroup.anchorArr.append(anchor)
                 
@@ -51,14 +43,15 @@ extension RecommendViewModel {
             
         }
         
+        
         dispathgroup.enter()
         /// 3.组请求第二部分颜值数据
         HttpTools.requestData(.GET, URLString: "http://capi.douyucdn.cn/api/v1/getVerticalRoom", parameters: parameters) { (result) in
-            guard let resultDict = result as? [String : NSObject] else {
+            guard let resultDict = result as? [String : Any] else {
                 return
             }
             
-            guard let dataArr = resultDict["data"] as? [[String : NSObject]] else {
+            guard let dataArr = resultDict["data"] as? [[String : Any]] else {
                 return
             }
             
@@ -78,11 +71,11 @@ extension RecommendViewModel {
         HttpTools.requestData(.GET, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate",parameters: parameters) { (result) in
             
             // 1.转化成字段模型
-            guard let resultDict = result as? [String : NSObject] else {
+            guard let resultDict = result as? [String : Any] else {
                 return
             }
             // 2.获取数组
-            guard let dateArr = resultDict["data"] as? [[String : NSObject]] else {
+            guard let dateArr = resultDict["data"] as? [[String : Any]] else {
                 return
             }
             

@@ -68,6 +68,12 @@
                 <constraint firstAttribute="trailing" secondItem="FTZ-mA-u8w" secondAttribute="trailing" constant="5" id="wNS-eX-Eul"/>
             </constraints>
             <size key="customSize" width="196" height="155"/>
+            <connections>
+                <outlet property="iconImageView" destination="ee9-ee-2mb" id="ZEy-Yz-l3D"/>
+                <outlet property="nickNameLabel" destination="pEY-i6-CST" id="PnS-pg-ji6"/>
+                <outlet property="onLineButton" destination="IEQ-OS-gw3" id="vrS-H9-PDB"/>
+                <outlet property="roomNameLabel" destination="FTZ-mA-u8w" id="c5Q-J5-idB"/>
+            </connections>
             <point key="canvasLocation" x="-357" y="-527"/>
         </collectionViewCell>
     </objects>

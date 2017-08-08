@@ -80,7 +80,6 @@ extension RecommendController {
 //MARK:- 网络请求-加载数据
 extension RecommendController {
     func loadData() {
-    
         recomendVM.requestData {
             self.collectionView.reloadData()
         }

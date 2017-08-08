@@ -8,12 +8,8 @@
 
 import UIKit
 
-class CollectionPrettyCell: UICollectionViewCell {
+class CollectionPrettyCell: CollectionBaseCell {
     //MARK:- 控件属性
-    
-    @IBOutlet weak var iconImageView: UIImageView!
-    @IBOutlet weak var onLineButton: UIButton!
-    @IBOutlet weak var nickNameLabel: UILabel!
     @IBOutlet weak var cityButton: UIButton!
     
     //MARK:- 定义属性
@@ -24,21 +20,20 @@ class CollectionPrettyCell: UICollectionViewCell {
                 return
             }
             
-            var onelineStr : String = ""
+          
+            var onlineStr : String = ""
             if anchor.online >= 10000 {
-                onelineStr = "\(Int(anchor.online / 10000))万在线"
+                onlineStr = "\(Int(anchor.online / 10000))万在线"
             }else {
-                onelineStr = "\(anchor.online)在线"
-                
+                onlineStr = "\(anchor.online)在线"
             }
-            onLineButton.setTitle(onelineStr, for: .normal)
-            
+            onLineButton.setTitle(onlineStr, for: .normal)
             
             nickNameLabel.text = anchor.nickname
             cityButton.setTitle(anchor.anchor_city, for: .normal)
-            
-              //            iconImageView.image = UIImage(named: AnchorModel.vertical_src)??
-            
+            guard let iconURL = URL(string: anchor.vertical_src) else { return }
+            iconImageView.kf.setImage(with: iconURL)
+           
         }
     }
     

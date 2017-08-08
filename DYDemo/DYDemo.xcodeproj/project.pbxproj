@@ -29,6 +29,7 @@
 		4D0B83ED1F39698300745EFB /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B83D71F39698300745EFB /* String+MD5.swift */; };
 		4D0B83EE1F39698300745EFB /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B83D81F39698300745EFB /* ThreadHelper.swift */; };
 		4D0B83EF1F39698300745EFB /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B83D91F39698300745EFB /* UIButton+Kingfisher.swift */; };
+		4D0B83F81F39A60B00745EFB /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B83F71F39A60B00745EFB /* CollectionBaseCell.swift */; };
 		4D3B9FB41F38189200EC4B3D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3B9FA71F38185300EC4B3D /* Alamofire.framework */; };
 		4D3B9FB51F38189200EC4B3D /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3B9FA71F38185300EC4B3D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4D3B9FBB1F38374F00EC4B3D /* HttpTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B9FBA1F38374F00EC4B3D /* HttpTools.swift */; };
@@ -157,6 +158,7 @@
 		4D0B83D71F39698300745EFB /* String+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
 		4D0B83D81F39698300745EFB /* ThreadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadHelper.swift; sourceTree = "<group>"; };
 		4D0B83D91F39698300745EFB /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		4D0B83F71F39A60B00745EFB /* CollectionBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
 		4D3B9F9B1F38185200EC4B3D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../../../Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		4D3B9FBA1F38374F00EC4B3D /* HttpTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTools.swift; sourceTree = "<group>"; };
 		4D3B9FBD1F3848AF00EC4B3D /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
@@ -414,6 +416,7 @@
 			children = (
 				4D7181C21F2F32E3007CF38A /* PageTitleView.swift */,
 				4D9F731A1F32F7660025E56B /* PageContentView.swift */,
+				4D0B83F71F39A60B00745EFB /* CollectionBaseCell.swift */,
 				4D3DBA071F3460440012D9BF /* CollectionNormalCell.swift */,
 				4D3DBA081F3460440012D9BF /* CollectionNormalCell.xib */,
 				4D3DBA0B1F3464BA0012D9BF /* CollectionPrettyCell.swift */,
@@ -651,6 +654,7 @@
 				4D7181841F2EDA11007CF38A /* AppDelegate.swift in Sources */,
 				4D3DBA021F3442220012D9BF /* RecommendController.swift in Sources */,
 				4D0B83DC1F39698300745EFB /* AnimatedImageView.swift in Sources */,
+				4D0B83F81F39A60B00745EFB /* CollectionBaseCell.swift in Sources */,
 				4D7181C31F2F32E3007CF38A /* PageTitleView.swift in Sources */,
 				4D3B9FBB1F38374F00EC4B3D /* HttpTools.swift in Sources */,
 				4D0B83EC1F39698300745EFB /* Resource.swift in Sources */,

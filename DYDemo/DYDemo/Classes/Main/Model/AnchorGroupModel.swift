@@ -10,7 +10,7 @@ import UIKit
 
 class AnchorGroupModel: NSObject {
     /// 该组中对应的房间信息
-    var room_list : [[String : NSObject]]? {
+    var room_list : [[String : Any]]? {
         didSet {
             guard let roomList = room_list else {
                 return
@@ -20,8 +20,6 @@ class AnchorGroupModel: NSObject {
                 let archor = AnchorModel(dict: dict)
                 self.anchorArr.append(archor)
             }
-        
-            
         }
     }
     /// 组显示的标题
@@ -36,17 +34,12 @@ class AnchorGroupModel: NSObject {
         
     }
     
-    init(dict : [String : NSObject]) {
-    
+    init(dict : [String : Any]) {
         super.init()
-        tag_name = dict["tag_name"] as! String
-        icon_url = dict["icon_url"] as! String
-        room_list = dict["room_list"] as? [[String : NSObject]]
-//        setValuesForKeys(dict)
-        
+        setValuesForKeys(dict)
     }
     
-    override func setValue(_ value: Any?, forKey key: String) {}
+    override func setValue(_ value: Any?, forUndefinedKey key: String) {}
     
     
 }
