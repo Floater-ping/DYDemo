@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="279" height="179"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9d-D5-Ygf">
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9d-D5-Ygf">
                         <rect key="frame" x="0.0" y="155" width="35" height="14"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="8rB-DX-PIl"/>
@@ -45,40 +45,45 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="666在线" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Db-YR-hfz">
-                        <rect key="frame" x="214" y="5" width="60" height="20"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWn-vR-anS">
+                        <rect key="frame" x="223" y="6" width="50" height="20"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="3wg-pX-fU2"/>
-                            <constraint firstAttribute="height" constant="20" id="W3Y-oG-Mdb"/>
+                            <constraint firstAttribute="height" constant="20" id="7HY-NR-P54"/>
+                            <constraint firstAttribute="width" constant="50" id="hQN-Dy-B1x"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
+                        <state key="normal" title="666在线"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="3"/>
+                                <integer key="value" value="4"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
-                    </label>
+                    </button>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="QoQ-pa-RS1" secondAttribute="trailing" constant="5" id="8IX-xD-LRz"/>
                 <constraint firstAttribute="trailing" secondItem="5rG-nI-zuo" secondAttribute="trailing" id="8aq-MG-dIs"/>
-                <constraint firstItem="1Db-YR-hfz" firstAttribute="top" secondItem="5rG-nI-zuo" secondAttribute="top" constant="5" id="COe-of-7dg"/>
+                <constraint firstItem="FWn-vR-anS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="T7j-Lp-mqg"/>
                 <constraint firstItem="QoQ-pa-RS1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VPs-uG-0dy"/>
                 <constraint firstItem="Z9d-D5-Ygf" firstAttribute="top" secondItem="QoQ-pa-RS1" secondAttribute="bottom" constant="5" id="XNe-wQ-lRV"/>
-                <constraint firstItem="1Db-YR-hfz" firstAttribute="trailing" secondItem="5rG-nI-zuo" secondAttribute="trailing" constant="-5" id="buT-58-nFQ"/>
                 <constraint firstItem="5rG-nI-zuo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="p3E-75-cep"/>
+                <constraint firstAttribute="trailing" secondItem="FWn-vR-anS" secondAttribute="trailing" constant="6" id="pQs-Mo-lSf"/>
                 <constraint firstAttribute="bottom" secondItem="Z9d-D5-Ygf" secondAttribute="bottom" constant="10" id="pmp-B6-Q2o"/>
                 <constraint firstItem="5rG-nI-zuo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qul-7c-UHf"/>
                 <constraint firstItem="Z9d-D5-Ygf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xKL-JY-Bix"/>
                 <constraint firstItem="QoQ-pa-RS1" firstAttribute="top" secondItem="5rG-nI-zuo" secondAttribute="bottom" constant="5" id="yw1-OM-Hq3"/>
             </constraints>
             <size key="customSize" width="279" height="179"/>
-            <point key="canvasLocation" x="25" y="-156"/>
+            <connections>
+                <outlet property="cityButton" destination="Z9d-D5-Ygf" id="QTi-Af-sfW"/>
+                <outlet property="iconImageView" destination="5rG-nI-zuo" id="SXv-UZ-Exc"/>
+                <outlet property="nickNameLabel" destination="QoQ-pa-RS1" id="gQv-h5-ruQ"/>
+                <outlet property="onLineButton" destination="FWn-vR-anS" id="GJp-aZ-9jA"/>
+            </connections>
+            <point key="canvasLocation" x="189" y="-208"/>
         </collectionViewCell>
     </objects>
     <resources>

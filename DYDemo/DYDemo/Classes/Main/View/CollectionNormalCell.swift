@@ -9,10 +9,7 @@
 import UIKit
 
 class CollectionNormalCell: UICollectionViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
+    //MARK:- 定义属性
+    var anchorModel : AnchorModel?
+    
 }

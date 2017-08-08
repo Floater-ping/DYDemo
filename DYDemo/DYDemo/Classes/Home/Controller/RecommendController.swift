@@ -102,14 +102,20 @@ extension RecommendController : UICollectionViewDataSource {
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell : UICollectionViewCell
+        // 取出数据
+        let groupModel = recomendVM.anchorGroupArr[indexPath.section]
+        let anchorModel = groupModel.anchorArr[indexPath.item]
+        
         
         if indexPath.section == 1 {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: pPrettyCellID, for: indexPath)
+         let  cell = collectionView.dequeueReusableCell(withReuseIdentifier: pPrettyCellID, for: indexPath) as! CollectionPrettyCell
+            cell.anchorModel = anchorModel
+            return cell
         }else {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: pNormalCellID, for: indexPath)
+          let  cell = collectionView.dequeueReusableCell(withReuseIdentifier: pNormalCellID, for: indexPath) as! CollectionNormalCell
+            cell.anchorModel = anchorModel
+            return cell
         }
-        return cell
     }
     
     
