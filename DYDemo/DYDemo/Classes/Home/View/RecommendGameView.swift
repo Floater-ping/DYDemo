@@ -13,3 +13,11 @@ class RecommendGameView: UIView {
    
 
 }
+
+//MARK:- 快速创建方法
+extension RecommendGameView {
+    
+    class func recommendCycleView() -> RecommendGameView {
+        return Bundle.main.loadNibNamed("RecommendGameView", owner: nil, options: nil)?.first as! RecommendGameView
+    }
+}
