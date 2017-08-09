@@ -27,7 +27,7 @@ class RecommendController: UIViewController {
         
         // 1.创建layout
         let layout = UICollectionViewFlowLayout()
-//        layout.itemSize = CGSize(width: pItemW, height: pNormalItemH)
+        //        layout.itemSize = CGSize(width: pItemW, height: pNormalItemH)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = pItemMargin
         layout.scrollDirection = .vertical
@@ -84,7 +84,7 @@ extension RecommendController {
             self.collectionView.reloadData()
         }
     }
-  
+    
 }
 
 //MARK:- UICollectionViewDataSource
@@ -95,7 +95,7 @@ extension RecommendController : UICollectionViewDataSource {
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-       let group = recomendVM.anchorGroupArr[section]
+        let group = recomendVM.anchorGroupArr[section]
         return group.anchorArr.count
     }
     
@@ -105,16 +105,16 @@ extension RecommendController : UICollectionViewDataSource {
         let groupModel = recomendVM.anchorGroupArr[indexPath.section]
         let anchorModel = groupModel.anchorArr[indexPath.item]
         
-        
+        var cell : CollectionBaseCell!
         if indexPath.section == 1 {
-         let  cell = collectionView.dequeueReusableCell(withReuseIdentifier: pPrettyCellID, for: indexPath) as! CollectionPrettyCell
-            cell.anchorModel = anchorModel
-            return cell
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: pPrettyCellID, for: indexPath) as! CollectionPrettyCell
         }else {
-          let  cell = collectionView.dequeueReusableCell(withReuseIdentifier: pNormalCellID, for: indexPath) as! CollectionNormalCell
-            cell.anchorModel = anchorModel
-            return cell
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: pNormalCellID, for: indexPath) as! CollectionNormalCell
         }
+        
+        cell.anchorModel = anchorModel
+        
+        return cell
     }
     
     
@@ -134,10 +134,10 @@ extension RecommendController : UICollectionViewDelegateFlowLayout{
         if indexPath.section == 1 {
             return CGSize(width: pItemW, height: pPrettyItemH)
         }else {
-        
+            
             return CGSize(width: pItemW, height: pNormalItemH)
         }
         
     }
-
+    
 }

@@ -13,4 +13,29 @@ class CollectionBaseCell: UICollectionViewCell {
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var onLineButton: UIButton!
     @IBOutlet weak var nickNameLabel: UILabel!
+    
+    //MARK:- 定义属性
+    var anchorModel : AnchorModel? {
+        
+        didSet {
+            guard let anchor = anchorModel else {
+                return
+            }
+            
+            
+            var onlineStr : String = ""
+            if anchor.online >= 10000 {
+                onlineStr = "\(Int(anchor.online / 10000))万在线"
+            }else {
+                onlineStr = "\(anchor.online)在线"
+            }
+            onLineButton.setTitle(onlineStr, for: .normal)
+            
+            nickNameLabel.text = anchor.nickname
+            
+            guard let iconURL = URL(string: anchor.vertical_src) else { return }
+            iconImageView.kf.setImage(with: iconURL)
+            
+        }
+    }
 }
