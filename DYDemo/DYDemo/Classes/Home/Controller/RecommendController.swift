@@ -14,6 +14,7 @@ fileprivate let pItemW : CGFloat = (pScreenWidth - pItemMargin * 3) / 2
 fileprivate let pNormalItemH : CGFloat = pItemW * 3 / 4
 fileprivate let pPrettyItemH : CGFloat = pItemW * 4 / 3
 fileprivate let pHeaderViewH : CGFloat = 50
+fileprivate let pCycleVieH : CGFloat = pScreenWidth * 3 / 8
 
 fileprivate let pNormalCellID = "pNormalCellID"
 fileprivate let pPrettyCellID = "pPrettyCellID"
@@ -27,7 +28,6 @@ class RecommendController: UIViewController {
         
         // 1.创建layout
         let layout = UICollectionViewFlowLayout()
-        //        layout.itemSize = CGSize(width: pItemW, height: pNormalItemH)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = pItemMargin
         layout.scrollDirection = .vertical
@@ -52,8 +52,13 @@ class RecommendController: UIViewController {
         
         }()
     
-    
     fileprivate lazy var recomendVM : RecommendViewModel = RecommendViewModel()
+    /// 轮播view
+    fileprivate lazy var cycleView : RecommendCycleView = {
+        let cycleView = RecommendCycleView.recommendCycleView()
+        cycleView.frame = CGRect(x: 0, y: -pCycleVieH, width: pScreenWidth, height: pCycleVieH)
+        return cycleView
+    }()
     
     
     //MARK:- 系统回调函数
@@ -71,8 +76,15 @@ class RecommendController: UIViewController {
 extension RecommendController {
     
     fileprivate func setUpUI(){
-        
+        // 1.将UICollectionView添加到控制器的view上
         view.addSubview(collectionView)
+        
+        // 2.将cycleView添加到collectionView上
+        collectionView.addSubview(cycleView)
+        
+        // 3.设置collectionView的内边距
+        collectionView.contentInset = UIEdgeInsets(top: pCycleVieH, left: 0, bottom: 0, right: 0)
+        
         
     }
 }

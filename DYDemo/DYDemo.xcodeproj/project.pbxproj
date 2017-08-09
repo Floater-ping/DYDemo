@@ -30,6 +30,8 @@
 		4D0B83EE1F39698300745EFB /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B83D81F39698300745EFB /* ThreadHelper.swift */; };
 		4D0B83EF1F39698300745EFB /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B83D91F39698300745EFB /* UIButton+Kingfisher.swift */; };
 		4D0B83F81F39A60B00745EFB /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B83F71F39A60B00745EFB /* CollectionBaseCell.swift */; };
+		4D1FE6151F3AE75A00767849 /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1FE6141F3AE75A00767849 /* RecommendCycleView.swift */; };
+		4D1FE61E1F3AE77B00767849 /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D1FE61D1F3AE77B00767849 /* RecommendCycleView.xib */; };
 		4D3B9FB41F38189200EC4B3D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3B9FA71F38185300EC4B3D /* Alamofire.framework */; };
 		4D3B9FB51F38189200EC4B3D /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3B9FA71F38185300EC4B3D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4D3B9FBB1F38374F00EC4B3D /* HttpTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B9FBA1F38374F00EC4B3D /* HttpTools.swift */; };
@@ -159,6 +161,8 @@
 		4D0B83D81F39698300745EFB /* ThreadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadHelper.swift; sourceTree = "<group>"; };
 		4D0B83D91F39698300745EFB /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
 		4D0B83F71F39A60B00745EFB /* CollectionBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
+		4D1FE6141F3AE75A00767849 /* RecommendCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
+		4D1FE61D1F3AE77B00767849 /* RecommendCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
 		4D3B9F9B1F38185200EC4B3D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../../../Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		4D3B9FBA1F38374F00EC4B3D /* HttpTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTools.swift; sourceTree = "<group>"; };
 		4D3B9FBD1F3848AF00EC4B3D /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
@@ -389,6 +393,8 @@
 			children = (
 				4D3DBA031F3456070012D9BF /* HomeCollectionHeaderView.swift */,
 				4D3DBA041F3456070012D9BF /* HomeCollectionHeaderView.xib */,
+				4D1FE6141F3AE75A00767849 /* RecommendCycleView.swift */,
+				4D1FE61D1F3AE77B00767849 /* RecommendCycleView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -629,6 +635,7 @@
 				4D0B83DA1F39698300745EFB /* LICENSE in Resources */,
 				4D7181A01F2F0D59007CF38A /* Home.storyboard in Resources */,
 				4D7181A91F2F0DC5007CF38A /* Profile.storyboard in Resources */,
+				4D1FE61E1F3AE77B00767849 /* RecommendCycleView.xib in Resources */,
 				4D3DBA0E1F3464BA0012D9BF /* CollectionPrettyCell.xib in Resources */,
 				4D3DBA061F3456070012D9BF /* HomeCollectionHeaderView.xib in Resources */,
 				4D7181A61F2F0DA8007CF38A /* Follow.storyboard in Resources */,
@@ -658,6 +665,7 @@
 				4D7181C31F2F32E3007CF38A /* PageTitleView.swift in Sources */,
 				4D3B9FBB1F38374F00EC4B3D /* HttpTools.swift in Sources */,
 				4D0B83EC1F39698300745EFB /* Resource.swift in Sources */,
+				4D1FE6151F3AE75A00767849 /* RecommendCycleView.swift in Sources */,
 				4D0B83DB1F39698300745EFB /* README.md in Sources */,
 				4D9F731B1F32F7660025E56B /* PageContentView.swift in Sources */,
 				4D0B83E71F39698300745EFB /* Indicator.swift in Sources */,

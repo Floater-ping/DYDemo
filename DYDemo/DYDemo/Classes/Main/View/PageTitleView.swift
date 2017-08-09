@@ -138,7 +138,6 @@ extension PageTitleView {
 extension PageTitleView {
 
     @objc fileprivate func titleLabelClick(tapGes : UITapGestureRecognizer) {
-        
         // 1.获取当前label
         guard let currentLabel = tapGes.view as? UILabel else {
             return
@@ -165,8 +164,6 @@ extension PageTitleView {
         
         // 6. 通知代理
         delegate?.pageTitleView(titleView: self, selectedIndex: currentIndex)
-        
-        
     }
 }
 
