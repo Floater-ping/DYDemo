@@ -35,6 +35,8 @@
 		4D1FE6201F3AFCAB00767849 /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1FE61F1F3AFCAB00767849 /* CycleModel.swift */; };
 		4D1FE6231F3B016800767849 /* CollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1FE6211F3B016800767849 /* CollectionCycleCell.swift */; };
 		4D1FE6241F3B016800767849 /* CollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D1FE6221F3B016800767849 /* CollectionCycleCell.xib */; };
+		4D1FE6261F3B109200767849 /* RecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1FE6251F3B109200767849 /* RecommendGameView.swift */; };
+		4D1FE6281F3B10B100767849 /* RecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D1FE6271F3B10B100767849 /* RecommendGameView.xib */; };
 		4D3B9FB41F38189200EC4B3D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3B9FA71F38185300EC4B3D /* Alamofire.framework */; };
 		4D3B9FB51F38189200EC4B3D /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3B9FA71F38185300EC4B3D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4D3B9FBB1F38374F00EC4B3D /* HttpTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B9FBA1F38374F00EC4B3D /* HttpTools.swift */; };
@@ -169,6 +171,8 @@
 		4D1FE61F1F3AFCAB00767849 /* CycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
 		4D1FE6211F3B016800767849 /* CollectionCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCycleCell.swift; sourceTree = "<group>"; };
 		4D1FE6221F3B016800767849 /* CollectionCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCycleCell.xib; sourceTree = "<group>"; };
+		4D1FE6251F3B109200767849 /* RecommendGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendGameView.swift; sourceTree = "<group>"; };
+		4D1FE6271F3B10B100767849 /* RecommendGameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendGameView.xib; sourceTree = "<group>"; };
 		4D3B9F9B1F38185200EC4B3D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../../../Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		4D3B9FBA1F38374F00EC4B3D /* HttpTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTools.swift; sourceTree = "<group>"; };
 		4D3B9FBD1F3848AF00EC4B3D /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
@@ -404,6 +408,8 @@
 				4D1FE61D1F3AE77B00767849 /* RecommendCycleView.xib */,
 				4D1FE6211F3B016800767849 /* CollectionCycleCell.swift */,
 				4D1FE6221F3B016800767849 /* CollectionCycleCell.xib */,
+				4D1FE6251F3B109200767849 /* RecommendGameView.swift */,
+				4D1FE6271F3B10B100767849 /* RecommendGameView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -641,6 +647,7 @@
 				4D3DBA0A1F3460440012D9BF /* CollectionNormalCell.xib in Resources */,
 				4D7181891F2EDA11007CF38A /* Main.storyboard in Resources */,
 				4D7181A31F2F0D89007CF38A /* Live.storyboard in Resources */,
+				4D1FE6281F3B10B100767849 /* RecommendGameView.xib in Resources */,
 				4D0B83DA1F39698300745EFB /* LICENSE in Resources */,
 				4D7181A01F2F0D59007CF38A /* Home.storyboard in Resources */,
 				4D7181A91F2F0DC5007CF38A /* Profile.storyboard in Resources */,
@@ -684,6 +691,7 @@
 				4D0B83E21F39698300745EFB /* ImageDownloader.swift in Sources */,
 				4D0B83EE1F39698300745EFB /* ThreadHelper.swift in Sources */,
 				4D0B83DD1F39698300745EFB /* Box.swift in Sources */,
+				4D1FE6261F3B109200767849 /* RecommendGameView.swift in Sources */,
 				4D3DBA051F3456070012D9BF /* HomeCollectionHeaderView.swift in Sources */,
 				4D7181C11F2F2021007CF38A /* UIBarButtonItem-Extension.swift in Sources */,
 				4D0B83DF1F39698300745EFB /* Filter.swift in Sources */,
