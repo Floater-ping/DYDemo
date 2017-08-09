@@ -9,14 +9,17 @@
 import UIKit
 
 class RecommendViewModel {
+    /// 推荐数据
     lazy var anchorGroupArr : [AnchorGroupModel] = [AnchorGroupModel]()
+    /// 轮播数据
+    lazy var cycleModelArr : [CycleModel] = [CycleModel]()
     fileprivate lazy var bigDataGroup : AnchorGroupModel = AnchorGroupModel()
     fileprivate lazy var prettyGroup : AnchorGroupModel = AnchorGroupModel()
-    
 }
 //MARK:- 发送网络请求
 extension RecommendViewModel {
     
+    // 请求推荐数据
     func requestData(finishedCallBack : @escaping () -> ()) {
         let parameters = ["limit" : "4","offset" : "0","time" : NSDate.getCurrentTime()]
         
@@ -100,4 +103,28 @@ extension RecommendViewModel {
         
         
     }
+    
+    // 请求轮播数据
+    func requestCycleDate(finishedCallBack : @escaping () -> ()) {
+        HttpTools.requestData(.GET, URLString: "http://capi.douyucdn.cn/api/v1/slide/6", parameters: ["version" : "2.401"]) { (result) in
+            // 1.获取整体字典数据
+            guard let resultData = result as? [String : Any] else { return }
+            
+            // 2.根据data的key获取数据
+            guard let dataArr = resultData["data"] as? [[String : Any]] else { return }
+            
+            // 3.字典转模型对象
+            for dict in dataArr {
+            let cycleModel = CycleModel(dict: dict)
+                self.cycleModelArr.append(cycleModel)
+                
+            }
+            
+            
+            
+            finishedCallBack()
+        }
+    }
+    
+    
 }

@@ -92,8 +92,16 @@ extension RecommendController {
 //MARK:- 网络请求-加载数据
 extension RecommendController {
     func loadData() {
+        // 1.请求推荐数据
         recomendVM.requestData {
             self.collectionView.reloadData()
+        }
+        
+        // 1.请求轮播数据
+        recomendVM.requestCycleDate {
+            // self不会产生强引用：闭包对控制器产生强引用；控制器对属性产生强引用，但是属性没有对闭包产生强引用
+            self.cycleView.cycleModelArr = self.recomendVM.cycleModelArr
+            
         }
     }
     
