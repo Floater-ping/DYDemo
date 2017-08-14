@@ -35,7 +35,7 @@ extension RecommendViewModel {
             guard let dataArr = resultDict["data"] as? [[String : Any]] else { return }
             
             self.bigDataGroup.tag_name = "热门"
-            self.bigDataGroup.icon_url = "home_header_hot"
+            self.bigDataGroup.icon_name = "home_header_hot"
             for dict in dataArr {
                 let anchor = AnchorModel(dict: dict)
                 self.bigDataGroup.anchorArr.append(anchor)
@@ -59,7 +59,7 @@ extension RecommendViewModel {
             }
             
             self.prettyGroup.tag_name = "颜值"
-            self.prettyGroup.icon_url = "home_header_phone"
+            self.prettyGroup.icon_name = "home_header_phone"
             for dict in dataArr {
                 
                 let anchor = AnchorModel(dict: dict)

@@ -25,7 +25,8 @@ class AnchorGroupModel: NSObject {
     /// 组显示的标题
     var tag_name : String = ""
     /// 组显示的图标
-    var icon_url : String = "home_header_normal"
+    var icon_name : String = "home_header_normal"
+    var icon_url = ""
     
     /// 定义主播模型对象数组 --- 该组中对应的房间信息
     lazy var anchorArr : [AnchorModel] = [AnchorModel]()

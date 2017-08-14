@@ -37,6 +37,8 @@
 		4D1FE6241F3B016800767849 /* CollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D1FE6221F3B016800767849 /* CollectionCycleCell.xib */; };
 		4D1FE6261F3B109200767849 /* RecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1FE6251F3B109200767849 /* RecommendGameView.swift */; };
 		4D1FE6281F3B10B100767849 /* RecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D1FE6271F3B10B100767849 /* RecommendGameView.xib */; };
+		4D2AB2D41F4197B600565483 /* GameCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2AB2D21F4197B600565483 /* GameCollectionCell.swift */; };
+		4D2AB2D51F4197B600565483 /* GameCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D2AB2D31F4197B600565483 /* GameCollectionCell.xib */; };
 		4D3B9FB41F38189200EC4B3D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3B9FA71F38185300EC4B3D /* Alamofire.framework */; };
 		4D3B9FB51F38189200EC4B3D /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3B9FA71F38185300EC4B3D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4D3B9FBB1F38374F00EC4B3D /* HttpTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B9FBA1F38374F00EC4B3D /* HttpTools.swift */; };
@@ -173,6 +175,8 @@
 		4D1FE6221F3B016800767849 /* CollectionCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCycleCell.xib; sourceTree = "<group>"; };
 		4D1FE6251F3B109200767849 /* RecommendGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendGameView.swift; sourceTree = "<group>"; };
 		4D1FE6271F3B10B100767849 /* RecommendGameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendGameView.xib; sourceTree = "<group>"; };
+		4D2AB2D21F4197B600565483 /* GameCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCollectionCell.swift; sourceTree = "<group>"; };
+		4D2AB2D31F4197B600565483 /* GameCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameCollectionCell.xib; sourceTree = "<group>"; };
 		4D3B9F9B1F38185200EC4B3D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../../../Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		4D3B9FBA1F38374F00EC4B3D /* HttpTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTools.swift; sourceTree = "<group>"; };
 		4D3B9FBD1F3848AF00EC4B3D /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
@@ -410,6 +414,8 @@
 				4D1FE6221F3B016800767849 /* CollectionCycleCell.xib */,
 				4D1FE6251F3B109200767849 /* RecommendGameView.swift */,
 				4D1FE6271F3B10B100767849 /* RecommendGameView.xib */,
+				4D2AB2D21F4197B600565483 /* GameCollectionCell.swift */,
+				4D2AB2D31F4197B600565483 /* GameCollectionCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -655,6 +661,7 @@
 				4D3DBA0E1F3464BA0012D9BF /* CollectionPrettyCell.xib in Resources */,
 				4D1FE6241F3B016800767849 /* CollectionCycleCell.xib in Resources */,
 				4D3DBA061F3456070012D9BF /* HomeCollectionHeaderView.xib in Resources */,
+				4D2AB2D51F4197B600565483 /* GameCollectionCell.xib in Resources */,
 				4D7181A61F2F0DA8007CF38A /* Follow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -707,6 +714,7 @@
 				4D3DBA091F3460440012D9BF /* CollectionNormalCell.swift in Sources */,
 				4D7181BE1F2F1573007CF38A /* HomeViewController.swift in Sources */,
 				4D0B83EF1F39698300745EFB /* UIButton+Kingfisher.swift in Sources */,
+				4D2AB2D41F4197B600565483 /* GameCollectionCell.swift in Sources */,
 				4D3B9FBE1F3848AF00EC4B3D /* RecommendViewModel.swift in Sources */,
 				4D3B9FC41F3854A600EC4B3D /* AnchorModel.swift in Sources */,
 			);

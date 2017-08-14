@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GameCollectionCell" customModule="DYDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="xE7-xx-kdE">
+                        <rect key="frame" x="12" y="12" width="56" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="xE7-xx-kdE" secondAttribute="height" multiplier="1:1" id="YS8-FZ-IRy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="28"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英雄联盟" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbu-Ka-fUb">
+                        <rect key="frame" x="12" y="73" width="56" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="xE7-xx-kdE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="6no-gd-HA6"/>
+                <constraint firstItem="gbu-Ka-fUb" firstAttribute="leading" secondItem="xE7-xx-kdE" secondAttribute="leading" id="I8B-7b-8SA"/>
+                <constraint firstItem="gbu-Ka-fUb" firstAttribute="trailing" secondItem="xE7-xx-kdE" secondAttribute="trailing" id="N51-kr-dkR"/>
+                <constraint firstAttribute="trailing" secondItem="xE7-xx-kdE" secondAttribute="trailing" constant="12" id="ldX-2X-BkU"/>
+                <constraint firstItem="xE7-xx-kdE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="qLS-Ms-gx0"/>
+                <constraint firstItem="gbu-Ka-fUb" firstAttribute="top" secondItem="xE7-xx-kdE" secondAttribute="bottom" constant="5" id="tnR-VB-0pj"/>
+            </constraints>
+            <size key="customSize" width="126" height="147"/>
+            <connections>
+                <outlet property="gImageView" destination="xE7-xx-kdE" id="8Jj-QA-22K"/>
+                <outlet property="gTitleNameLabel" destination="gbu-Ka-fUb" id="yFU-ne-eHl"/>
+            </connections>
+            <point key="canvasLocation" x="-226" y="-93"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="live_cell_default_phone" width="103" height="103"/>
+    </resources>
+</document>

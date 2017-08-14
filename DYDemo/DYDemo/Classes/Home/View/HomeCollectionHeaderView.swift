@@ -19,7 +19,7 @@ class HomeCollectionHeaderView: UICollectionReusableView {
     
         didSet {
         titleLabel.text = groupModel?.tag_name
-            iconImageView.image = UIImage.init(named: groupModel?.icon_url ?? "home_header_normal")
+            iconImageView.image = UIImage.init(named: groupModel?.icon_name ?? "home_header_normal")
             
         }
     }
