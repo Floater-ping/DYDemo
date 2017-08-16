@@ -23,7 +23,11 @@ class GameCollectionCell: UICollectionViewCell {
                 return
             }
             gTitleNameLabel.text = anchor.tag_name;
-            guard let iconURL = URL(string: anchor.icon_url ) else { return }
+            guard let iconURL = URL(string: anchor.icon_url ) else {
+                let img = UIImage(named: "home_more_btn")
+                gImageView.image = img;
+                return
+            }
             
             gImageView.kf.setImage(with: iconURL, placeholder: UIImage(named: "home_more_btn"))
         }
